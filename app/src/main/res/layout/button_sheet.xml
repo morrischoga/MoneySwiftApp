@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/naime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="Tanatswa Makinda"
+        app:layout_constraintBottom_toBottomOf="@+id/sendto"
+        app:layout_constraintStart_toEndOf="@+id/sendto"
+        app:layout_constraintTop_toTopOf="@+id/sendto" />
+
+    <TextView
+
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$66"
+        app:layout_constraintBottom_toBottomOf="@+id/theamount"
+        app:layout_constraintStart_toStartOf="@+id/naime"
+        app:layout_constraintTop_toTopOf="@+id/theamount" />
+
+    <TextView
+
+        android:id="@+id/idvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@icloud.com"
+        app:layout_constraintBottom_toBottomOf="@+id/bsid"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/bsid" />
+
+    <TextView
+        android:id="@+id/sendto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Send To :"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/theamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Amount :"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/sendto"
+        app:layout_constraintTop_toBottomOf="@+id/sendto" />
+
+    <TextView
+        android:id="@+id/bsid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Account ID :"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/theamount"
+        app:layout_constraintTop_toBottomOf="@+id/theamount" />
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send"
+        android:layout_width="110dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:background="@drawable/send_receive_button"
+
+        android:text="Send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bsid" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancel"
+        android:layout_width="110dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/send_receive_button"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/send"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
